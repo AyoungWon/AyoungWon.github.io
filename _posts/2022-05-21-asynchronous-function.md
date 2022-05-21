@@ -83,21 +83,30 @@ bar();
 위 코드에서 `setTimeout`에서 delay는 0초이다. 0초라도 실제로는 4ms 이후에 콜백함수 foo가 실행되는데, `foo` 함수와 `bar` 함수 중 어느 함수가 먼저 실행될까? 결과는 `bar` 함수 이후 `foo` 함수가 실행된다. 왜 그런지 아래에서 실행 순서를 그림으로 확인해보자.
 
 <br/>
+  <div class="slider">
+   <div>
+    <img src="../assets/post_img/event-loop-2.PNG " alt="event-loop example 1">
+    <p style="text-align:center">1. 전역 함수 실행</p>
+   </div>
+   <div>
+    <img src="../assets/post_img/event-loop-3.PNG " alt="event-loop example 2">
+    <p style="text-align:center">2. setTimeout 함수 실행</p>
+   </div>
+   <div>
+    <img src="../assets/post_img/event-loop-4.PNG " alt="event-loop example 3">
+    <p style="text-align:center">3. foo 함수 delay 대기, setTimeout 종료, bar 함수 실행</p>
+   </div>
+   <div>
+    <img src="../assets/post_img/event-loop-5.PNG " alt="event-loop example 4">
+    <p style="text-align:center">4. 이벤트 루프에 의해 foo 함수 태스크 큐로 올라감</p>
+   </div>
+   <div>
+    <img src="../assets/post_img/event-loop-6.PNG " alt="event-loop example 5">
+    <p style="text-align:center">5. bar 함수, 전역 함수 실행 종료(call stack 빔)</p>
+   </div>
+   <div>
+    <img src="../assets/post_img/event-loop-7.PNG " alt="event-loop example 6">
+    <p style="text-align:center">6. foo 함수 실행 후 종료</p>
+   </div>
 
-![Image with caption](../assets/post_img/event-loop-2.PNG "Image with caption")
-_전역 함수 실행_
-
-![Image with caption](../assets/post_img/event-loop-3.PNG "Image with caption")
-_setTimeout 함수 실행_
-
-![Image with caption](../assets/post_img/event-loop-4.PNG "Image with caption")
-_foo 함수 delay 대기, setTimeout 종료, bar 함수 실행_
-
-![Image with caption](../assets/post_img/event-loop-5.PNG "Image with caption")
-_이벤트 루프에 의해 foo 함수 태스크 큐로 올라감_
-
-![Image with caption](../assets/post_img/event-loop-6.PNG "Image with caption")
-_bar 함수, 전역 함수 실행 종료(call stack 빔)_
-
-![Image with caption](../assets/post_img/event-loop-7.PNG "Image with caption")
-_foo 함수 실행 후 종료_
+  </div>
