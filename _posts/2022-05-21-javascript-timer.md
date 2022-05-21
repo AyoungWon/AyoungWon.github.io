@@ -1,18 +1,21 @@
 ---
 layout: post
 title: "[Javascript]Timer"
-author: "wayne"
+author: "Wayne"
 tags: javascript
 excerpt_separator: <!--more-->
 ---
 
-![main](../assets/post_img/javascript_deep_dive.png "main")
-
-함수 호출을 딜레이시키는 방법은 없을까?
+<span style="color:rgba(0,0,0,0)">함수 호출을 딜레이시키는 방법은 없을까?</span>
 
 <!--more-->
 
 <br/><br/><br/>
+
+[모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)를 스터디하면서 정리한 내용입니다.
+![main](../assets/post_img/javascript_deep_dive.png "main")
+
+<br/><br/>
 
 # 호출 스케줄링
 
