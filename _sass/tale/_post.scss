@@ -32,6 +32,9 @@
     text-align: left;
   }
 
+  a {
+    color: #ffbb33;
+  }
   a:hover {
     text-decoration: underline;
   }
@@ -64,4 +67,25 @@
 
 span.bg_highlight {
   background-color: rgba(255, 234, 97, 0.25);
+}
+
+table {
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 4px 8px;
+}
+
+th {
+  background-color: #eee;
+}
+
+td:nth-child(1) {
+  background-color: #eee;
+  text-align: center;
 }

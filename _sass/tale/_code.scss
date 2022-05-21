@@ -4,11 +4,11 @@ code {
 }
 
 code {
-  background-color: $grey-3;
+  background-color: $code-color-bg;
   border-radius: 3px;
   color: $code-color;
   font-size: 85%;
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
 }
 
 pre {
@@ -27,7 +27,7 @@ pre code {
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
 
   pre {
     margin-bottom: 0;
@@ -37,10 +37,10 @@ pre code {
   .lineno {
     color: $default-tint;
     display: inline-block; // Ensures the null space also isn't selectable
-    padding: 0 .75rem 0 .25rem;
+    padding: 0 0.75rem 0 0.25rem;
     // Make sure numbers aren't selectable
     -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    user-select: none;
   }
 }
