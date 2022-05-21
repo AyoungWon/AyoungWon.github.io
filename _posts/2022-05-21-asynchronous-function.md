@@ -112,3 +112,8 @@ bar();
    </div>
 
   </div>
+<br/><br/>
+
+### Reference
+
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)

@@ -126,3 +126,9 @@ throttle(func, delay);
 ![throttle](../assets/post_img/2022-05-21-javascript-timer-asset2.png "throttle")
 
 `throttle`은 scroll 이벤트 처리나 무한 스크롤 UI를 구현 등에 유용하게 사용된다.
+
+<br/><br/>
+
+### Reference
+
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/) <br/>
