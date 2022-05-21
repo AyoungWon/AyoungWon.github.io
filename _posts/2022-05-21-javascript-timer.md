@@ -6,9 +6,13 @@ tags: javascript
 excerpt_separator: <!--more-->
 ---
 
-<br/><br/><br/>
-
 ![main](../assets/post_img/javascript_deep_dive.png "main")
+
+함수 호출을 딜레이시키는 방법은 없을까?
+
+<!--more-->
+
+<br/><br/><br/>
 
 # 호출 스케줄링
 
