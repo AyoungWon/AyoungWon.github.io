@@ -105,5 +105,4 @@ bar();
 
 ### Reference
 
-> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)
-> [MDN EventLoop](https://developer.mozilla.org/ko/docs/Web/JavaScript/EventLoop)
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)<br/> > [MDN EventLoop](https://developer.mozilla.org/ko/docs/Web/JavaScript/EventLoop)
