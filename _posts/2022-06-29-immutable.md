@@ -108,3 +108,7 @@ setStudents([...students, "안나"]); //good
 ## 3. immer.js 사용하기
 
 `immer.js`는 `push`나 `pop` 메서드 등을 사용하면서도 불변성을 지키게 해주는 라이브러리이다. 이와 관련되서는 다른 포스트에서 `redux`와 함께 자세히 살펴보도록 하겠다.
+
+### Reference
+
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/) <br/> [MDN Immutable](https://developer.mozilla.org/ko/docs/Glossary/Immutable)

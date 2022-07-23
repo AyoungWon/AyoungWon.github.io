@@ -12,13 +12,7 @@ excerpt_separator: <!--more-->
 
 <br/><br/><br/>
 
-[모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)를 스터디하면서 정리한 내용입니다.
-![main](../assets/post_img/javascript_deep_dive.png "main")
-
-<br/><br/><br/>
-
 자바스크립트를 이루는 다양한 코드 조각들의 기본적인 명칭과 의미에 대해서 알아보자!
-<br/><br/>
 
 # 값(Value)
 
@@ -28,8 +22,6 @@ excerpt_separator: <!--more-->
 let result = 10 + 20;
 //변수 result에 할당 되는 것은 표현식인 10 + 20가 아니라, 결과 값인 30
 ```
-
-<br/><br/>
 
 # 리터럴(Literal)
 
@@ -47,8 +39,6 @@ const object ={
   1:"객체"
 };
 ```
-
-<br/><br/>
 
 # 표현식(Expression)
 
@@ -73,8 +63,6 @@ const name = "minsu" + getFamilyName(); // "minsu Kim"
 //getFamilyName()도 평가되어 kim이란 값으로 인식되므로 표현식
 ```
 
-<br/><br/>
-
 # 문(Statement)
 
 문은 프로그램을 구성하는 기본 단위이자 **최소 실행 단위**이다. 문은 문법적인 의미를 가지며 문법적으로 더 이상 나눌 수 없는 코드 요소인 토큰으로 이루어진다. 키워드, 식별자, 연산자, 리터럴, 세미콜론 등은 모두 의미를 가지며 문법적으로 더 이상 나눌 수 없기 때문에 토큰이다.
@@ -96,8 +84,6 @@ if(index === 0){console.log("first")} //조건문
 for(let 1 = 0; i < 100; i++){console.log(i);} //반복문
 ```
 
-<br/><br/>
-
 # 표현식인 문과 표현식이 아닌 문
 
 표현식은 그 자체로 문이 될 수도 있고, 혹은 문의 일부일 수도 있다.
@@ -117,10 +103,13 @@ var myName = var name;
 //syntaxError: Unexpected token var
 ```
 
-<br/><br/>
-
 # 세미콜론(;)
 
 **세미콜론은 문의 종료를 나타낸다.** 자바스크립트 엔진은 세미콜론으로 문이 종료한 위치를 파악하고 순차적으로 문을 실행한다. 따라서, 문을 끝낼 때는 세미콜론을 붙여야 한다. 단, 0개 이상의 문을 중괄호로 묶은 코드블록은 뒤에 세미콜론을 붙이지 않는다.<br/><br/>
 
 세미콜론은 옵션값으로 생략가능 하다. 자바스크립트 엔진이 스스로 문의 끝이라고 생각하는 지점에 세미콜론을 자동으로 삽입하는 기능(ASI)이 있기 때문이다. 다만, 엔진이 예상한 문의 종료 지점과 개발자가 의도한 문의 종료 지점이 서로 상이할 수 있으므로 세미콜론 사용을 권장하는 분위기이다.
+
+### Reference
+
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)
+> [MDN Statements](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements)

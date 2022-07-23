@@ -12,11 +12,6 @@ excerpt_separator: <!--more-->
 
 <br/><br/><br/>
 
-[모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)를 스터디하면서 정리한 내용입니다.
-![main](../assets/post_img/javascript_deep_dive.png "main")
-
-<br/><br/>
-
 # 동기 처리와 비동기 처리
 
 자바스크립트는 싱글스레드로 동작한다. 즉, 자바스크립트 엔진은 단 하나의 실행 컨텍스트 스택을 갖기 때문에 두 가지 이상의 태스크를 동시에 실행할 수 없다. 따라서 현재 실행 중인 실행 컨텍스트를 제외한 컨텍스트는 모두 실행 대기중인 테스크들이다.
@@ -37,8 +32,6 @@ excerpt_separator: <!--more-->
 동기 처리 방식은 태스크를 순서대로 하나씩 처리하므로 실행 순서가 보장된다는 장점이 있지만, 앞 태스크가 종료할 때까지 아휴 태스크들이 블로킹되는 단점이 있다.
 </span>
 
-<br/><br/>
-
 ## 2. 비동기
 
 `setTimeout` 함수는 자신의 다음 코드를 블로킹하지 않는다. 따라서 `setTimeout`의 코드가 종료되지 않았어도 다음 코드는 실행된다. 이처럼 현재 실행 중인 태스크가 종료되지 않은 상태라 해도 다음 테스크를 곧바로 실행하는 방식을 **비동기 처리**라고 한다.
@@ -48,8 +41,6 @@ excerpt_separator: <!--more-->
 다만,<span class="bg_highlight"> 비동기 처리 방식은 블로킹이 발생하지 않는 다는 장점이 있지만, 태스크의 실행 순서가 보장되지 않는 단점이 있다.</span>
 <br/><br/>
 비동기로 방식하는 함수로는 타이머 함수인 `setTimeout`, `setInterval`, `HTTP 요청`, `이벤트 핸들러`가 있다. 어떻게 싱글스레드인 자바스크립트에서 비동기로 처리되는 함수가 있는 것일까?
-
-<br/><br/>
 
 # 이벤트 루프와 태스크 큐
 
@@ -66,8 +57,6 @@ excerpt_separator: <!--more-->
 > `태스크 큐 : task queue`<br/>
 > 비동기 함수의 콜백 함수 또는 이벤트 핸들러가 일시적으로 보관되는 영역이다.<br/><br/> `이벤트 루프 : event loop`<br/>
 > 이벤트 루프는 콜 스택에 현 재 실행 중인 실행 컨텍스트가 있는지, 태스크 큐에 대기 중인 함수가 있는지 반복해서 확인한다. 만약 콜 스택이 비어 있고 태스크 큐에 대기 중인 함수가 있다면 이벤트 루프는 순차적으로 함수를 태스크 큐에서 콜 스택으로 이동시키고, 콜 스택으로 이동된 함수는 실행된다.<br/>
-
-<br/><br/>
 
 ```javascript
 function foo() {
@@ -117,3 +106,4 @@ bar();
 ### Reference
 
 > [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)
+> [MDN EventLoop](https://developer.mozilla.org/ko/docs/Web/JavaScript/EventLoop)
