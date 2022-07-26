@@ -209,4 +209,4 @@ obj.sayHi(); // Hi! Won
 
 ### Reference
 
-> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/) <br/> > [MDN Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object)
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/) <br/>[MDN Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object)

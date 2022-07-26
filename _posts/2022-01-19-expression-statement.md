@@ -111,4 +111,4 @@ var myName = var name;
 
 ### Reference
 
-> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)<br/> > [MDN Statements](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements)
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)<br/>[MDN Statements](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements)
