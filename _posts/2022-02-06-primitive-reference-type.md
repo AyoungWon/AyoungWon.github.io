@@ -217,4 +217,4 @@ console.log(copy); // {name: "Kim", address: "Seoul"}
 
 ### Reference
 
-> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)<br/> [MDN Data_structures](https://developer.mozilla.org/ko/docs/Web/JavaScript/Data_structures)
+> [모던 자바스크립트 deep dive](https://wikibook.co.kr/mjs/)<br/> [MDN Primitive](https://developer.mozilla.org/ko/docs/Glossary/Primitive)<br/>[MDN Data_structures](https://developer.mozilla.org/ko/docs/Web/JavaScript/Data_structures)
