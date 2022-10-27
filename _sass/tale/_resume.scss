@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  padding-bottom: 100px;
+
+  img {
+    height: 100%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+  h4 {
+    margin: 0 0 0.2rem 0;
+  }
+  h5 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  ul {
+    margin: 0 0 1.5rem 0;
+    padding: 0ch;
+  }
+  li {
+    margin: 0;
+    padding: 0 0 0.5rem 0.5rem;
+    list-style: none;
+  }
+
+  .contents {
+    border-bottom: 1px solid #bbbbbb;
+    padding: 50px 0;
+  }
+
+  .flex {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .hidden {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .text_margin {
+    margin-bottom: 2rem;
+  }
+
+  .project_title {
+    margin-right: 32px;
+    width: 180px;
+  }
+
+  .project_content {
+    flex: 1;
+  }
+  .project {
+    .list_title {
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+
+    li {
+      list-style: square;
+      margin-left: 1rem;
+    }
+  }
+}
