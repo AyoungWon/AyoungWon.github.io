@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]Timer"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

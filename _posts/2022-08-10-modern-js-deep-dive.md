@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]모던 자바스크립트 딥다이브 후기"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

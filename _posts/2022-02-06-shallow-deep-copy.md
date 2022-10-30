@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]얕은 복사와 깊은 복사에 대한 고찰"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

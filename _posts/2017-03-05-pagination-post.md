@@ -2,7 +2,7 @@
 layout: post
 title: "Pagination Post"
 author: "Chester"
-tags: Tale
+tags:
 hidden: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]객체의 변경을 막는 방법들"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

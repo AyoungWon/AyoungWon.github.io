@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]타입 변환"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

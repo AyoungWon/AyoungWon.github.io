@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]원시 값과 객체의 비교"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

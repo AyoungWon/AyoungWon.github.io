@@ -2,7 +2,7 @@
 layout: post
 title: "[React]React와 불변성"
 author: "Wayne"
-tags: javascript react immutable frontend
+tags: javascript study react immutable frontend
 excerpt_separator: <!--more-->
 ---
 

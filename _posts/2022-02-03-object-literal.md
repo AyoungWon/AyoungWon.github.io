@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]Object 리터럴"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

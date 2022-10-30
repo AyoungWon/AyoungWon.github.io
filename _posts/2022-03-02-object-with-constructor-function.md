@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]생성자 함수와 객체"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

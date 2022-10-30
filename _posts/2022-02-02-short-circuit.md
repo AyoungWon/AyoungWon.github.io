@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]단축 평가"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "[Javascript]표현식과 문"
 author: "Wayne"
-tags: javascript
+tags: javascript study
 excerpt_separator: <!--more-->
 ---
 
