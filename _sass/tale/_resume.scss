@@ -2,12 +2,12 @@
   width: 100%;
   padding-bottom: 100px;
 
-  img {
-    height: 100%;
+  h1 {
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0 0 1rem 0;
   }
   h4 {
@@ -17,9 +17,14 @@
     font-size: 1.25rem;
     margin: 0;
   }
+
   p {
     margin: 0;
   }
+  img {
+    height: 100%;
+  }
+
   ul {
     margin: 0 0 1.5rem 0;
     padding: 0ch;
@@ -28,6 +33,16 @@
     margin: 0;
     padding: 0 0 0.5rem 0.5rem;
     list-style: none;
+  }
+  a {
+    color: #555;
+  }
+  b {
+    font-weight: 600;
+  }
+
+  .underline {
+    border-bottom: 1px solid #bbbbbb;
   }
 
   .contents {
@@ -47,8 +62,19 @@
     overflow: hidden;
   }
 
+  .text_highlight {
+    color: #ffbb33;
+  }
+
   .text_margin {
     margin-bottom: 2rem;
+  }
+  .team_title {
+    font-size: 1.5rem;
+    color: #999;
+    border-bottom: 1px solid #999;
+    width: fit-content;
+    margin: 2rem 0 1rem;
   }
 
   .project_title {
@@ -59,15 +85,30 @@
   .project_content {
     flex: 1;
   }
-  .project {
-    .list_title {
-      font-weight: 600;
-      margin: 0.5rem 0;
-    }
 
+  .list_title {
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+
+  .project {
     li {
       list-style: square;
       margin-left: 1rem;
     }
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+
+    li {
+      padding: 0;
+    }
+  }
+  .period {
+    font-size: 14px;
   }
 }
