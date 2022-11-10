@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 .container {
   width: 100%;
   padding: 3rem 0 6rem;
@@ -67,7 +71,10 @@
   .text_highlight {
     color: #ffbb33;
   }
-
+  .text_under_highlight {
+    border-bottom: 1px solid #ffbb33;
+    width: fit-content;
+  }
   .text_margin {
     margin-bottom: 2rem;
   }
@@ -75,11 +82,11 @@
     font-size: 1.5rem;
     color: #999;
     width: fit-content;
-    margin: 2rem 0 0;
+    margin: 2rem 0 1rem;
   }
 
   .team_desc {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .project_title {
