@@ -10,6 +10,9 @@ html {
     font-size: 3rem;
     margin-top: 0;
   }
+  h2 {
+    line-height: 2.25rem;
+  }
 
   h3 {
     font-size: 2rem;
@@ -115,7 +118,7 @@ html {
     align-items: center;
     gap: 8px;
     margin: 0;
-
+    max-height: 32px;
     li {
       padding: 0;
     }
