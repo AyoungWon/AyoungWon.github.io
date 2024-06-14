@@ -83,7 +83,7 @@ html {
   }
   .team_title {
     font-size: 1.5rem;
-    color: #999;
+    color: #000;
     width: fit-content;
     margin: 2rem 0 1rem;
   }
@@ -125,5 +125,9 @@ html {
   }
   .period {
     font-size: 14px;
+  }
+
+  .hide {
+    display: none;
   }
 }
