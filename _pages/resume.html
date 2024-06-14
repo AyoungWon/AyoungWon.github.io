@@ -140,13 +140,9 @@ permalink: /resume/
         <ul class="project">
           <p class="list_title">Works</p>
           <li>React-native app 프론트 개발</li>
-          <li>Youtube 컨텐츠 분석 및 생성에 대한 원활한 참여를 위해 
-            Chrome Extension을 통해서 
-              Youtube와 분리된 서비스가 아닌 Youtube 페이지내에 직접 구현하여 
-              유저 참여의 편리성을 높임</li>
+          <li>Youtube 컨텐츠 분석 및 생성에 대한 원활한 참여를 위해 Chrome Extension을 통해서 자사 서비스를 Youtube 페이지내에 직접 구현하여 유저 참여의 편리성을 높임</li>
           <li>
-          영상 내에 수천 개의 자막 Input 구현 및 자막 수정에 대한 성능 개선을 위해
-            React-Window 도입하였고, 화면 렌더링 최적화를 통해 개선된 자막 수정 UI 구현
+            수천 개의 자막 입력과 수정 성능을 개선하기 위해 React-Window를 도입하여, 화면 렌더링 최적화를 통해 자막 수정 UI를 향상
           </li>
           <li>Front와 Internal 서버간의 중개 역할을 하는 서버 개발 및 REST API 개발</li>
         </ul>
@@ -160,39 +156,6 @@ permalink: /resume/
         </ul>
       </div>
     </div>
-    <div class="content flex">
-      <div class="project_title">
-        <h5 class="underline"><a href="https://pfp.live/" target="_blank">PFP-live</a></h5>
-        <p class="period">2022.08 ~ 2023.03</p>
-      </div>
-      <div class="project_content">
-        <ul class="project">
-          <p class="list_title">Description</p>
-        <li>Top-tier Collection의 NFT 소유주들을 위한 실시간 커뮤니티 서비스</li>
-        <ul class="project">
-          <p class="list_title">Works</p>
-          <li>
-            타사 SNS 플랫폼을 활용한 커뮤니티 서비스를 위해 Chrome
-            Extension을 이용한 서비스 코드 주입
-          </li>
-          <li>
-            빠른 MVP 개발을 위해 유저간의 소통을 웹소켓이 아닌 SSE + Axios 조합을 이용하여 이벤트
-              송수신 구현
-          </li>
-          <li>프론트 웹과 커뮤니티 extension에 연동할 REST API 서버 개발</li>
-          <li>NFT 소유권 변경을 추적하기 위해 
-            MSA 기반의 Node 이벤트 서버 개발하여,
-            Collection Transaction 이벤트 추적을 통해
-            NFT 오너의 변경에 대한 실시간 반영을 구현</li>
-        </ul>
-        <ul class="project">
-          <p class="list_title">Skills</p>
-          <li>ReactJS, Typescript, Redux-toolkit, EmotionJS</li>
-          <li>NestJS, NodeJS, Typeorm, PostgresQL, AWS S3</li>
-        </ul>
-      </div>
-    </div>
-    
     <div class="content flex">
       <div class="project_title">
         <h5>Soundoo</h5>
@@ -210,18 +173,24 @@ permalink: /resume/
             서비스 메인 화면에서 5760개의 이미지 로딩에 대한 유저 경험 개선을
               위해 Image-sprite 기법을 통한 문제 해결한 결과, 전체 이미지 로딩 시간이 85% 개선
           </li>
-          <li>메인 화면 이미지의 지도와 같은 기능을 구현하기 위해 
-            canvas 도입이 필요하였고, KonvaJs를 사용해 
-            메인 맵을 구현하였고, 일반적안 이미지에서는 어려웠던 시점 이동 및 확대 축소가 가능한 이미지 맵을 구현</li>
+          <li>지도와 같은 기능을 구현하기 위해 HTML5 Canvas 라이브러리인 KonvaJs를 사용하여 메인 맵을 구현하였으며, 일반적인 이미지로는 어려웠던 시점 이동 및 확대/축소가 가능한 이미지 맵을 구현</li>
           <li>Klaytn NFT 민팅 화면 및 검증 구현</li>
-          <li>REST API 서버 및 Collection transaction에 대한 검증 및 DB 업데이트 개발</li>
+          <li>
+            빠른 MVP 개발을 위해 유저간의 소통을 웹소켓이 아닌 SSE + Axios 조합을 이용하여 이벤트
+              송수신 구현
+          </li>
+          <li>프론트 웹 서비스에 연동할 REST API 서버 개발</li>
+          <li>NFT 소유권 변경을 추적하기 위해 
+            Node기반 이벤트 서버 개발하여,
+            Transaction 이벤트 추적을 통해
+            NFT 오너의 변경에 대한 실시간 반영을 구현</li>
           <li>
             다수 유저의 동시간대 이미지 업로드에 대한 문제를 해결하기 위해
             API 서버와 분리된 이미지 프로세스용 Node 서버 개발,
                AWS SQS를 활용해 메세지 큐잉을 구현,
               서비스의 메인 이미지 수정의 순서를 보장
           </li>
-          <!-- <li>Collection의 Transaction 추적과 데이터베이스 업데이트를 위한 Node 서버 구현</li> -->
+
         </ul>
         <ul class="project">
           <p class="list_title">Skills</p>
