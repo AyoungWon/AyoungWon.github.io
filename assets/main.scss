@@ -1,5 +1,25 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 'tale';
+@import "tale";
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/assets/font/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/assets/font/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/assets/font/Pretendard-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
