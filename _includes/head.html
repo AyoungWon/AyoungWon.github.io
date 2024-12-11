@@ -1,8 +1,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  {% seo %}
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | relative_url }}" />
+  <meta name="twitter:image" content="{{ page.image | relative_url }}" />
+  {% elsif site.image %}
+  <meta property="og:image" content="{{ site.image | relative_url }}" />
+  <meta name="twitter:image" content="{{ site.image | relative_url }}" />
+  {% endif %} {% seo %}
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link

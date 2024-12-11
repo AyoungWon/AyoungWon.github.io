@@ -4,6 +4,7 @@ title: "[Inner Circle] OSS 프로젝트 - 1"
 author: "Wayne"
 tags: inner-circle study 이너서클 OSS npm
 # hidden: true
+image: /assets/post_img/2024-08-20/ic-os-rdd.png
 excerpt_separator: <!--more-->
 ---
 

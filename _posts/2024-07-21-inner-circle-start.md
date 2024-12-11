@@ -4,6 +4,7 @@ title: "[Inner Circle] 시작 후기"
 author: "Wayne"
 tags: inner-circle study 이너서클
 # hidden: true
+image: /assets/post_img/2024-07-21/ic-on-boarding.png
 excerpt_separator: <!--more-->
 ---
 
