@@ -2,7 +2,7 @@
 layout: post
 title: "[Inner Circle] OSS 프로젝트 - 1"
 author: "Wayne"
-tags: inner-circle study 이너서클 OSS npm
+tags: inner-circle study 이너서클 OSS npm 패스트캠퍼스
 # hidden: true
 image: /assets/post_img/2024-08-20/ic-os-rdd.png
 excerpt_separator: <!--more-->
