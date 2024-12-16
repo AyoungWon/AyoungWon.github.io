@@ -2,7 +2,7 @@
 layout: post
 title: "[Inner Circle] 수료 후기 - 팀프로젝트에 대한 고찰"
 author: "Wayne"
-tags: inner-circle study 이너서클 후기 패스트캠퍼스
+tags: inner-circle study 이너서클 후기 패스트캠퍼스 팀프로젝트
 # hidden: true
 image: /assets/post_img/2024-11-11/ic-team-pt.jpg
 excerpt_separator: <!--more-->
