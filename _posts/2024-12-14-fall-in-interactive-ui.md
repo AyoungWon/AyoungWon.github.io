@@ -3,7 +3,7 @@ layout: post
 title: "인터랙티브 UI 구현에 빠져들기"
 author: "Wayne"
 tags: 인터랙티브 interactive react react-spring
-# hidden: true
+hidden: true
 excerpt_separator: <!--more-->
 ---
 
