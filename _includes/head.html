@@ -10,6 +10,11 @@
   {% endif %} {% seo %}
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <!-- 페이지별 개별 CSS 추가 -->
+  {% if page.layout == "resume" %} <link rel="stylesheet" href="{{
+  "/assets/css/resume.css" | relative_url }}"> {% elsif page.layout ==
+  "mentoring-guide" %} <link rel="stylesheet" href="{{
+  "/assets/css/mentoring-guide.css" | relative_url }}"> {% endif %}
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700"

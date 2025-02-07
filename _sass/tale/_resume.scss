@@ -96,7 +96,7 @@ html {
 
   .project_title {
     margin-right: 32px;
-    width: 160px;
+    width: 120px;
   }
 
   .project_content {
@@ -110,7 +110,6 @@ html {
 
   .project {
     li {
-      list-style: square;
       margin-left: 1rem;
     }
   }
@@ -127,6 +126,7 @@ html {
   }
   .period {
     font-size: 14px;
+    white-space: nowrap;
   }
 
   .hide {
