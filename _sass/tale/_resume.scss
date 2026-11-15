@@ -133,4 +133,158 @@ html {
   .hide {
     display: none;
   }
+
+  /* 화면에서는 숨기고 PDF(인쇄)에서만 표시 */
+  .print-only {
+    display: none;
+  }
+}
+
+@media print {
+  .container .print-only {
+    display: list-item;
+  }
+}
+
+/* PDF(인쇄) 전용: 1쪽 About까지 / 2쪽 Experience~스매시 / 3쪽 아비투스 / 4쪽 나머지
+   @page margin을 0으로 두어 브라우저 머리글·바닥글이 찍히지 않게 하고, 여백은 패딩으로 만든다. */
+$print-x: 13mm;
+$print-y: 14mm;
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html {
+    font-size: 15.5px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  main {
+    width: 100%;
+    max-width: none;
+  }
+
+  .container {
+    padding: $print-y $print-x 0;
+    box-sizing: border-box;
+    color: #333;
+
+    > h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.25rem;
+      line-height: 1.7rem;
+      color: #666;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0;
+      color: #111;
+    }
+    h3 {
+      font-size: 1.45rem;
+      margin: 0 0 1rem;
+      color: #111;
+      letter-spacing: -0.01em;
+    }
+
+    .contents {
+      border-bottom: none;
+      padding: 0 0 3.4rem;
+    }
+
+    /* 1쪽: 연락처 2단 */
+    .contact {
+      padding-top: 3rem;
+      ul {
+        margin: 0 0 1.4rem;
+      }
+      ul:last-child {
+        margin-bottom: 0;
+      }
+      h4 {
+        font-size: 0.85rem;
+        color: #999;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+      }
+      li {
+        padding: 0 0 0.25rem;
+      }
+    }
+
+    /* 1쪽: 기술 스택 칩 */
+    .skills {
+      max-height: none;
+      gap: 6px;
+      margin-bottom: 6px;
+      li {
+        padding: 2px 10px;
+        border: 1px solid #e2e2e2;
+        border-radius: 999px;
+        background: #f7f7f7;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* 1쪽: About 강조 블록 */
+    .about .text_margin {
+      margin: 0;
+      padding: 0.35rem 0 0.35rem 1rem;
+      border-left: 3px solid #ffdb0d;
+      line-height: 1.8;
+    }
+    .about .text_margin:first-of-type {
+      font-size: 1.08rem;
+      color: #222;
+    }
+
+    /* 경력 */
+    .team_title {
+      margin: 1.8rem 0 0.8rem;
+    }
+    div.print-page-break > .team_title:first-child {
+      margin-top: 0;
+    }
+    .team_desc {
+      margin-bottom: 1.4rem;
+      color: #555;
+    }
+    .project_title {
+      width: 110px;
+      margin-right: 24px;
+    }
+    .list_title {
+      font-size: 0.9rem;
+      color: #888;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin: 0.2rem 0 0.5rem;
+    }
+    ul {
+      margin-bottom: 1.1rem;
+    }
+    li {
+      padding-bottom: 0.5rem;
+      line-height: 1.7;
+      break-inside: avoid;
+    }
+
+    > .contents:last-child .period {
+      display: inline-block;
+      margin-bottom: 0.8rem;
+    }
+
+    .print-page-break {
+      break-before: page;
+      page-break-before: always;
+      margin-top: 0 !important;
+      padding-top: $print-y;
+    }
+  }
 }

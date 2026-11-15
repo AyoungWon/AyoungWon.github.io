@@ -8,7 +8,7 @@ permalink: /resume/
     조직이 가지고 있는 다양한 문제를<br />개발로 풀어나가는 것에 즐거움을 느끼는
   </h2>
   <h1>개발자 원아영입니다.</h1>
-  <div class="contents">
+  <div class="contents contact">
     <!-- <h3>Personal Info</h3> -->
     <div>
       <ul>
@@ -16,7 +16,10 @@ permalink: /resume/
         <li>
           Email. <a href="mailto:wayinwayne@gmail.com">wayinwayne@gmail.com</a>
         </li>
-        <li>Phone. 010-2874-4750</li>
+        {% if jekyll.environment != "production" %}
+        <!-- 전화번호: 배포(GitHub Pages) 빌드에는 포함하지 않고, 로컬 빌드의 PDF 인쇄에서만 표시 -->
+        <li class="print-only">Phone. 010-2874-4750</li>
+        {% endif %}
         <li>
           linkedin.
           <a href="https://www.linkedin.com/in/way-in-wayne"
@@ -42,7 +45,7 @@ permalink: /resume/
       </ul>
     </div>
   </div>
-  <div class="contents">
+  <div class="contents skills-section">
     <h3>Skills</h3>
     <div>
       <ul class="skills flex">
@@ -67,25 +70,23 @@ permalink: /resume/
       </ul>
     </div>
   </div>
-  <div class="contents">
-    <h3>Introduce</h3>
+  <div class="contents about">
+    <h3>About</h3>
     <p class="text_margin">
       <b>결제·정산처럼 정합성이 중요한 도메인을 0→1로 만들고</b>, 클라이언트
       아키텍처 설계와 성능 개선으로 서비스의 성장을 뒷받침해 온 프론트엔드
       개발자입니다.
     </p>
     <p class="text_margin">
-      기능을 만드는 데서 멈추지 않고, <b>측정으로 병목을 찾고 트레이드오프와
-      한계를 문서로 남겨</b> 팀이 같은 판단을 이어갈 수 있게 하는 것을 중요하게
-      생각합니다. 프로젝트의 설계 단계부터 함께하며 프로덕트가 성장하는 과정에
-      애정을 느낍니다.
+      <b>측정으로 병목을 찾고, 트레이드오프와 한계를 문서로 남겨</b> 팀이 같은
+      판단을 이어갈 수 있게 일합니다.
     </p>
     <p class="text_margin">
       다양한 AI 도구를 설계·구현·코드 리뷰 과정에 적극적으로 활용해 개발
       생산성을 높이고 있습니다.
     </p>
   </div>
-  <div class="contents">
+  <div class="contents print-page-break">
     <h3>Experience</h3>
     <p>
       프로젝트의 전체 기술 스택이 아닌 본인 사용 기술 스택만 작성하였습니다.
@@ -129,9 +130,10 @@ permalink: /resume/
             </li>
             <li>
               <b>채팅 로컬 퍼스트 아키텍처 설계·주도</b> — 서버 DB 비대화를
-              해결하기 위해 메시지 영구 저장을 클라이언트 SQLite로 이전. DB를
-              화면의 단일 진실로 두고 서버 offset과 로컬 rank를 분리해 페이징
-              어긋남을 방지. 측정 기반 최적화(읽기 윈도우 상한, memo 안정화)로
+              해결하기 위해 메시지 저장을 클라이언트 SQLite로 이전하고,
+              서버는 최근 메시지만 보관하는 구조로 전환해
+              <b>서버 메시지 보관량 약 98% 감소</b>(누적 약 469만 건 → 약 7.7만
+              건). 측정 기반 최적화(읽기 윈도우 상한, memo 안정화)로
               <b>DB 읽기 최대 1.2초 → 0.46초 이하, 리스트 블로킹 절반 감소</b>
             </li>
             <li>
@@ -165,7 +167,7 @@ permalink: /resume/
         </div>
       </div>
     </div>
-    <div>
+    <div class="print-page-break">
       <h4 class="team_title" id="side_project">아비투스어소시에이트</h4>
       <p class="team_desc">
         2022년에 설립된 <b>아트테크 스타트업</b>으로, 예술가들과 미술 애호가들을
@@ -241,17 +243,16 @@ permalink: /resume/
         </div>
       </div>
     </div>
-    <div style="margin-top: 100px">
+    <div class="print-page-break" style="margin-top: 100px">
       <h4 class="team_title">viewee.ai</h4>
       <p>(2021.04 ~ 2023.04, <b>아비투스어소시에이트에 인수</b>)</p>
       <p class="team_desc">
-        AI와 블록체인을 통한 새로운 가치를 추구하는 스타트업입니다. 유저 참여로
-        쌓인 데이터를 분석해 클라이언트에게 제공하고, 참여한 유저에게 블록체인으로
-        보상하는 서비스를 만들었습니다.
+        유저 참여로 쌓인 데이터를 AI로 분석해 기업 고객에게 제공하고, 참여한
+        유저에게는 블록체인 기반 보상을 지급하는 서비스를 만든 스타트업입니다.
       </p>
       <div class="content flex">
         <div class="project_title">
-          <h5>Earntube 외 3개 서비스</h5>
+          <h5>Earntube 외<br />3개 서비스</h5>
           <p class="period">2021.04 ~ 2023.04</p>
         </div>
         <div class="project_content">
@@ -327,9 +328,7 @@ permalink: /resume/
     -->
   </div>
   <div class="contents" style="border: none">
-    <h3>Experiences & Education</h3>
-    <a href="/mentoring-guide" class="underline">기부 멘토링 : 멘토 활동</a>
-    <br /><span class="period">2025.01 ~ 현재</span><br />
+    <h3>Education</h3>
     <div>
       <!-- 방송통신대학교 컴퓨터과학과 <br /><span class="period"
         >2022.03 ~ 현재</span
@@ -339,5 +338,7 @@ permalink: /resume/
         >2013.03 ~ 2022.02</span
       >
     </div>
+    <a href="/mentoring-guide" class="underline">기부 멘토링 : 멘토 활동</a>
+    <br /><span class="period">2025.01 ~ 현재</span>
   </div>
 </div>
