@@ -5,7 +5,7 @@ permalink: /resume/
 
 <div class="container">
   <h2>
-    다양한 조직이 가지고 있는 문제를<br />개발로 풀어나가는 것에 즐거움을 느끼는
+    조직이 가지고 있는 다양한 문제를<br />개발로 풀어나가는 것에 즐거움을 느끼는
   </h2>
   <h1>개발자 원아영입니다.</h1>
   <div class="contents">
@@ -46,43 +46,43 @@ permalink: /resume/
     <h3>Skills</h3>
     <div>
       <ul class="skills flex">
-        <li>Typescript</li>
-        <li>React</li>
-        <li>Next</li>
+        <li>TypeScript</li>
         <li>React Native</li>
-        <li>React-query</li>
-        <li>CSS-in-JS</li>
+        <li>React</li>
+        <li>Next.js</li>
+        <li>React Query</li>
         <li>Zustand</li>
-        <li>Redux</li>
+      </ul>
+      <ul class="skills flex">
+        <li>SQLite (op-sqlite, drizzle)</li>
+        <li>TossPayments</li>
+        <li>Sentry</li>
       </ul>
       <ul class="skills flex">
         <li>NestJS</li>
-        <li>NodeJS</li>
-        <li>Typeorm</li>
+        <li>Node.js</li>
+        <li>TypeORM</li>
         <li>PostgreSQL</li>
-        <li>AWS-S3</li>
+        <li>AWS S3</li>
       </ul>
     </div>
   </div>
   <div class="contents">
     <h3>Introduce</h3>
     <p class="text_margin">
-      프로젝트의 설계부터 함께 참여하여, 발전해나가는 프로덕트에 애정과 즐거움을
-      느끼고 있습니다.
+      <b>결제·정산처럼 정합성이 중요한 도메인을 0→1로 만들고</b>, 클라이언트
+      아키텍처 설계와 성능 개선으로 서비스의 성장을 뒷받침해 온 프론트엔드
+      개발자입니다.
     </p>
     <p class="text_margin">
-      디자인과 기술을 포함하여 급변하는 프론트엔드 개발 측면에서,
-      <b
-        >변경 요구 사항에 신속하게 대응하고 유지 보수성을 향상시키기 위한 최선의
-        아키텍처와 구조</b
-      >란 무엇인지 고민하고 있습니다. 또한 최근에는 동료들과의 협업을 위해
-      <b>개발자 경험(DX)</b>에도 많은 관심을 가지고 있습니다.
+      기능을 만드는 데서 멈추지 않고, <b>측정으로 병목을 찾고 트레이드오프와
+      한계를 문서로 남겨</b> 팀이 같은 판단을 이어갈 수 있게 하는 것을 중요하게
+      생각합니다. 프로젝트의 설계 단계부터 함께하며 프로덕트가 성장하는 과정에
+      애정을 느낍니다.
     </p>
     <p class="text_margin">
-      사용자의 서비스 이용 경험의 개선과 그에 기반한 프로덕트의 성장과 매출
-      향상에 기여하기 위해 꾸준히 노력하고 있습니다.<br />
-      치열한 스타트업 씬에서, 개발 생산성 및 최적화를 위한 AI 바이브코딩을
-      즐기고, 적극 활용하고 있습니다.
+      다양한 AI 도구를 설계·구현·코드 리뷰 과정에 적극적으로 활용해 개발
+      생산성을 높이고 있습니다.
     </p>
   </div>
   <div class="contents">
@@ -108,37 +108,59 @@ permalink: /resume/
         <div class="project_content">
           <ul class="project">
             <p class="list_title">Works</p>
-            <li>프론트엔드 파트 리드</li>
             <li>
-              데이터베이스 비대화 해결을 위해 서버 집중형 데이터를 Client-side
-              Storage로 전환하는 분산 데이터 저장 아키텍처 설계 및 메신저 기능
-              고도화
+              <b>프론트엔드 파트 리드</b> — 코드 리뷰·PR 규칙, QA 프로세스,
+              브랜치 전략을 도입해 프론트엔드 팀의 개발 흐름을 정비
             </li>
             <li>
-              React Native Bridge 기반의 Native Module 설계 및 핑거프린트
-              알고리즘 기반 데이터 비교 동기화 프로세스 구축으로 불필요한 데이터
-              전송 최적화 및 보안성 강화
+              <b>매치 인앱 결제 0→1 구축</b> — 참가자 간 계좌이체로 정산하던
+              매치에 인앱 결제를 도입하는 프로젝트의 프론트엔드를 맡아 결제·취소·
+              환불·정산·출금(앱 내 지갑) 흐름을 설계·구현.
+              <b>월 결제 0건 → 3.6만 건</b>(누적 약 47만 건), 오픈 이후 월
+              결제액 3.5배 성장
             </li>
             <li>
-              매칭, 결제, 정산, 출금 등 앱 신규 기능 개발 및 매니징, 런칭 후
-              월별 앱내 결제 4억 돌파
+              결제 확정 기준을 서버 승인으로 일원화하고, 결제 에러를 원인별로
+              분류해 사용자 안내와 Sentry 관측을 함께 설계. 중복 결제 이슈 해결
             </li>
             <li>
-              앱내 레거시 코드를 리팩토링하여 성능 최적화, 코드 가독성 및
-              유지보수성 향상
+              <b>노쇼보증금</b>의 결제·환불·정산 흐름 구현 — 출시 1년 만에
+              <b>소셜매치의 약 76%가 보증금을 설정</b>하는 기본 기능으로 정착
             </li>
             <li>
-              적극적인 코드 리뷰 및 PR, QA 문화, 브랜치 전략 도입을 통한 이슈
-              발생수 감소
+              <b>채팅 로컬 퍼스트 아키텍처 설계·주도</b> — 서버 DB 비대화를
+              해결하기 위해 메시지 영구 저장을 클라이언트 SQLite로 이전. DB를
+              화면의 단일 진실로 두고 서버 offset과 로컬 rank를 분리해 페이징
+              어긋남을 방지. 측정 기반 최적화(읽기 윈도우 상한, memo 안정화)로
+              <b>DB 읽기 최대 1.2초 → 0.46초 이하, 리스트 블로킹 절반 감소</b>
             </li>
+            <li>
+              <b>매치 도메인 통합 리팩토링 주도</b> — 이원화된 소셜/티어 매치를
+              응답 기반 분기와 어댑터 계층으로 통합하고 13개 PR로 단계적으로 이전.
+              <b>라우트 66 → 16개, 코드 순감 약 1.8만 줄</b>
+            </li>
+            <li>
+              <b>레슨·코치 신규 도메인 0→1 출시</b> — 코치 측 플로우(생성
+              위저드, 반복 일정·시리즈 수정, 레슨 관리·정산보류·재정산, 코치
+              프로필) 설계·구현
+            </li>
+            <li>
+              연락처 동기화에 SHA-256 fingerprint 기반 증분 동기화를 적용해
+              변경분만 전송하고, 국제 번호 정규화와 기기 암호화 저장소로 보안 강화
+            </li>
+            <!-- 수치가 있으면 다시 살릴 것
             <li>
               검색 순위 향상과 트래픽 증대을 위한 동적 SEO 구현을 통한 검색 엔진
               최적화 및 마케팅 자동화
             </li>
+            -->
           </ul>
           <ul class="project">
             <p class="list_title">Skills</p>
-            <li>React Native, Typescript, Next, React Query, Zustand</li>
+            <li>
+              React Native, TypeScript, React Query, Zustand, op-sqlite·drizzle,
+              TossPayments, Sentry, Next
+            </li>
           </ul>
         </div>
       </div>
@@ -163,70 +185,50 @@ permalink: /resume/
           <ul class="project">
             <p class="list_title">Description</p>
             <p>
-              글로벌 온라인 아트 플랫폼으로 디지털 기술을 통해 예술 작품의
-              거래를 간편하게 만들고, 미술 작품을 실제 오프라인에서 체험하듯
-              온라인 공간에서 재현하여 더 많은 사람들이 예술에 접근할 수 있도록
-              돕습니다. 이를 통해 예술가들에게 글로벌 시장에서 작품을 선보일
-              기회를 제공합니다.
+              작품 거래와 온라인 전시를 제공하는 글로벌 온라인 아트 플랫폼입니다.
             </p>
           </ul>
           <ul class="project">
             <p class="list_title">Works</p>
             <li>
-              Artue.io의 초기 설정 및 커머스 상품, 결제, 전시, 인터랙션 UI를
-              포함한 프론트엔드 개발, 리딩 및 유지보수, 백엔드 일부 서비스 개발
+              Artue.io 초기 세팅부터 <b>프론트엔드 개발 리딩</b> — 커머스(상품·결제)·
+              전시·인터랙션 UI 개발과 유지보수, NestJS 기반 백엔드 일부 서비스 개발
             </li>
             <li>
-              SSR 및 오픈그래프를 활용한 동적 메타 정보 적용으로 상품 및
-              아티스트별 미리보기 구현하여, 공유하기를 통한 유저 유입률 직전 월
-              대비 1.8배 증가
+              SSR과 오픈그래프 기반 동적 메타 정보로 상품·아티스트별 공유
+              미리보기를 구현하고 사이트맵·SEO를 정비해,
+              <b>공유를 통한 유입 직전 월 대비 1.8배</b>
             </li>
             <li>
-              성능 최적화를 위한 리팩토링을 통해 빌드와 초기 로드에 대한 사이즈
-              약 40% 감소
+              성능 최적화 리팩토링으로 <b>빌드·초기 로드 사이즈 약 40% 감소</b>
             </li>
             <li>
-              글로벌 유저를 위한 다국어 및 다중 통화 지원, 결제 서비스 도입으로
-              결제 건수 증가
+              이미지·비디오 로드 최적화로 <b>로딩 시간 최대 1/3 감소</b>
             </li>
-            <li>이미지 및 비디오 로드 최적화로 로딩 시간 최대 1/3 감소</li>
+            <li>
+              글로벌 유저를 위한 다국어·다중 통화와 결제 도입, 네이버페이 연동 및
+              보안 검수 진행
+            </li>
+            <li>
+              전시(Exhibition)·About 페이지의 인터랙티브 UI를 react-spring으로
+              구현하고 애니메이션 성능 최적화
+            </li>
+            <li>
+              API 응답 데이터와 뷰 상태를 분리하고, react-hook-form 기반 입력·에러
+              처리를 공통화·문서화해 유지보수성 개선
+            </li>
+            <li>
+              코드 리뷰를 위한 PR·브랜치 규칙을 문서화하고, cypress로 주요 로직
+              테스트를 작성해 디버깅·테스트 시간 단축
+            </li>
+            <!-- 6년차 기준으로 정리하며 제외한 항목
             <li>스켈레톤 UI 적용을 통한 사용자 경험 향상</li>
             <li>React Query 도입을 통한 API 캐싱 최적화</li>
-
-            <li class="hide">
-              회원가입과 로그인, 사용자 인증을 위한 토큰 기반 서비스에 대한 UI
-              및 서버 API 구현
-            </li>
-            <li>
-              Exhibition 및 About 페이지의 인터랙티브 UI 개발 및 react-spring을
-              사용하여 애니메이션 성능 최적화
-            </li>
-            <li>
-              cypress를 활용해 주요 로직에 대한 테스트 코드 작성으로 디버깅 및
-              테스팅 시간 감소
-            </li>
-            <li>
-              API 응답 데이터와 데이터를 활용한 뷰 상태 분리로 코드 유지보수성
-              개선
-            </li>
-            <li class="hide">
-              Twilio, Mailchimp 이용해 회원가입 및 구매 등 알림 시스템 구현
-            </li>
-            <li>
-              사이트맵 작성 및 SEO 최적화 작업을 통해 검색 엔진 효율성 및 검색
-              순위 향상 도모
-            </li>
-            <li>
-              일관된 입력 처리 및 에러 핸들링을 위해 react-hook-form을 도입하고
-              에러 메시지 관리를 위한 공통화 코드 및 문서 개발
-            </li>
-            <li class="hide">
-              AWS S3에 파일 업로드를 위한 인터셉트 데코레이터 개발, 파일에 대한
-              검증 및 규칙 통합
-            </li>
+            <li>회원가입과 로그인, 사용자 인증을 위한 토큰 기반 서비스에 대한 UI 및 서버 API 구현</li>
+            <li>Twilio, Mailchimp 이용해 회원가입 및 구매 등 알림 시스템 구현</li>
+            <li>AWS S3에 파일 업로드를 위한 인터셉트 데코레이터 개발, 파일에 대한 검증 및 규칙 통합</li>
             <li>사용자 인증을 위한 토큰 기반 로직 전략 및 interceptor 구현</li>
-            <li>코드리뷰 문화를 위한 PR 및 브랜치 작성 규칙 문서화</li>
-            <li>네이버페이 결제 프론트 연동 및 보안 검수 진행 및 관리</li>
+            -->
           </ul>
           <ul class="project">
             <p class="list_title">Skills</p>
@@ -243,191 +245,64 @@ permalink: /resume/
       <h4 class="team_title">viewee.ai</h4>
       <p>(2021.04 ~ 2023.04, <b>아비투스어소시에이트에 인수</b>)</p>
       <p class="team_desc">
-        AI와 블록체인을 통한 새로운 가치를 추구하는 스타트업입니다. 유저의
-        참여를 통해 쌓인 데이터를 분석하여 유의미한 정보를 창출해 클라이언트에게
-        제공하고, 참여한 유저들에게 블록체인을 통해 보상하여 모두에게 이익이
-        되는 서비스를 제공하고자 합니다.
+        AI와 블록체인을 통한 새로운 가치를 추구하는 스타트업입니다. 유저 참여로
+        쌓인 데이터를 분석해 클라이언트에게 제공하고, 참여한 유저에게 블록체인으로
+        보상하는 서비스를 만들었습니다.
       </p>
       <div class="content flex">
         <div class="project_title">
-          <h5 class="underline">
-            <a href="https://earntube.io/" target="_blank">Earntube</a>
-          </h5>
-          <p class="period">2022.08 ~ 2023.04</p>
+          <h5>Earntube 외 3개 서비스</h5>
+          <p class="period">2021.04 ~ 2023.04</p>
         </div>
         <div class="project_content">
           <ul class="project">
             <p class="list_title">Description</p>
             <p>
-              Earntube는 유저 참여형 앱 서비스로, 유튜브와 연동되어 영상을
-              시청하면서 토큰을 획득할 수 있는 플랫폼입니다. Web3 요소를
-              통합하여 사용자의 관심과 참여에 보상하며, Play to Earn 개념을
-              도입했습니다.
-              <span class="underline">
-                정식 서비스 오픈 전 pre등록 기간 약 10만명의 유저 가입자</span
-              >
-              수를 달성하였습니다.
-            </p>
-          </ul>
-          <ul class="project">
-            <p class="list_title">Works</p>
-            <li>React Native를 사용하여 앱내 뷰 및 컴포넌트 개발</li>
-            <li>
-              사용자들이 아이템을 구매하고 판매할 수 있는 UI 및 로직을 구현
-            </li>
-            <li>
-              SVG를 활용한 커스텀 버튼 컴포넌트 개발, 아날로그 게임 형식 버튼
-              스타일을 유지하며 재사용 가능한 컴포넌트 구축
-            </li>
-            <li>다양한 입력 양식을 지원하는 공통 인풋 컴포넌트 제작</li>
-            <li>메세지 기반의 웹뷰 콘텐츠 업데이트 및 데이터 송수신 처리</li>
-            <li>사용자 회원가입 화면 및 로직 구현</li>
-            <li>Splash와 Lottie를 이용한 초기 로딩 실행 화면 구현</li>
-          </ul>
-          <ul class="project">
-            <p class="list_title">Skills</p>
-            <li>React Native, React, Typescript, Zustand, Emotion</li>
-            <li>NestJS, postgreSQL, AWS S3</li>
-          </ul>
-        </div>
-      </div>
-      <div class="content flex">
-        <div class="project_title">
-          <h5>View3</h5>
-          <p class="period">2022.03 ~ 2022.08</p>
-        </div>
-        <div class="project_content">
-          <ul class="project">
-            <p class="list_title">Description</p>
-            <p>
-              Chrome 확장 프로그램을 통해 유튜브에 대한 자막 및 피드백 등을
-              제공하는 서비스입니다. 고객은 다양한 언어로 자막과 피드백을
-              의뢰하며, 참여자는 Chrome 확장 프로그램을 통해 다양한 이 서비스는
-              글로벌 접근성을 높이고 콘텐츠 품질을 향상시키며, 참여자에게 경제적
-              인센티브를 제공합니다.
+              Play to Earn 앱(Earntube), YouTube 자막 Chrome Extension(View3),
+              NFT 광고 플랫폼(KlayTV), AI 유튜브 컨설팅(Voost) 등 4개 서비스의
+              프론트엔드와 일부 백엔드를 개발했습니다.
             </p>
           </ul>
           <ul class="project">
             <p class="list_title">Works</p>
             <li>
-              Youtube 컨텐츠 분석 및 생성에 대한 원활한 참여를 위해 Chrome
-              Extension을 통해서 자사 서비스를 Youtube 페이지내에 직접 구현하여
-              유저 참여의 편리성을 높임
+              <b>Earntube</b> — React Native 앱 화면과 아이템 거래 UI·로직 개발,
+              웹뷰 메시지 기반 데이터 송수신 처리.
+              <span class="underline">정식 오픈 전 사전 등록 약 10만 명</span>
             </li>
             <li>
-              수천 개의 자막 입력과 수정 성능을 개선하기 위해 React-Window를
-              도입하여, 화면 렌더링 최적화를 통해 자막 수정 UI를 향상
+              <b>View3</b> — Chrome Extension 전체 개발로 YouTube 페이지 안에서
+              바로 참여할 수 있게 구현, react-window로
+              <b>자막 수천 개</b>의 편집 UI 렌더링 최적화
             </li>
             <li>
-              StoryBook을 도입하여 컴포넌트 관리 효율성을 향상시키고, 디자이너
-              및 기획자와의 협업 편의성을 증대시킴
+              <b>KlayTV</b> — 이미지 5,760개를 Image-sprite로 묶어
+              <b>전체 이미지 로딩 시간 85% 감소</b>, 이미지 처리 Node 서버와 AWS
+              SQS 메시지 큐로 동시 업로드 순서 보장
             </li>
             <li>
-              Chrome Extension 전체 개발 및 프로덕트 웹 랜딩 페이지 일부 개발
+              <b>Voost</b> — Redux-saga 기반 비동기 업로드로 동영상 업로드 중에도
+              다음 단계를 진행할 수 있게 개선
             </li>
           </ul>
           <ul class="project">
             <p class="list_title">Skills</p>
             <li>
-              React, Typescript, Chrome Extension, Redux-toolkit, Emotion,
-              StoryBook
+              React, React Native, Typescript, Redux, Zustand, Chrome Extension,
+              Emotion
             </li>
-          </ul>
-        </div>
-      </div>
-      <div class="content flex">
-        <div class="project_title">
-          <h5>KlayTV</h5>
-          <p class="period">2021.11 ~ 2022.03</p>
-        </div>
-        <div class="project_content">
-          <ul class="project">
-            <p class="list_title">Description</p>
-            <p>
-              특정 방송 시간의 NFT 블록을 소유함으로서 방송 시간 동안 독점적인
-              광고 및 홍보가 가능하게 하는 서비스입니다. 소유한 NFT 블록은 추후
-              거래가 가능하여 추가적인 경제적 인센티브를 제공합니다.
-            </p>
-          </ul>
-          <ul class="project">
-            <p class="list_title">Works</p>
-
-            <li>
-              5760개의 이미지 로딩에 대한 유저 경험 개선을 위해 Image-sprite
-              기법을 통해 전체 이미지 로딩 시간 85% 감소
-            </li>
-            <li>
-              KonvaJs를 사용하여 확대/축소가 가능한 이미지 맵을 구현 및 동적
-              라인 그리기 구현
-            </li>
-            <li class="hide">Klaytn NFT 민팅 화면 및 트랜잭션 검증 구현</li>
-            <li>SSE + Axios 조합을 이용하여 이벤트 송수신 구현</li>
-            <li class="hide">
-              NFT 소유권 변경을 추적을 위한 Node 이벤트 서버 개발, Transaction
-              이벤트 추적 및 실시간 반영 구현
-            </li>
-            <li>
-              유저의 동시간대 이미지 업로드에 대한 문제를 해결하기 위해 이미지
-              프로세스용 Node 서버 개발, AWS SQS를 활용해 메세지 큐잉을 구현,
-              이미지 업로드 순서 보장
-            </li>
-            <li>프로덕트 웹 프론트 파트 및 API 개발</li>
-          </ul>
-          <ul class="project">
-            <p class="list_title">Skills</p>
-            <li>React, Typescript, Redux, Styled-component</li>
             <li>NestJS, NodeJS, Typeorm, PostgreSQL, MongoDB, AWS S3, SQS</li>
           </ul>
         </div>
       </div>
-      <div class="content flex">
-        <div class="project_title">
-          <h5>Voost</h5>
-          <p class="period">2021.04 ~ 2021.10</p>
-        </div>
-        <div class="project_content">
-          <ul class="project">
-            <p class="list_title">Description</p>
-            <p>
-              AI 기반 유튜브 영상 최적화 컨설팅 서비스로, 고객이 올린 영상,
-              제목, 설명, 태그, 자막 등을 분석하여 더 매력적이고 검색 최적화된
-              제목과 설명을 추천합니다. 최신 트렌드를 반영한 인기 태그를
-              제안하고, 부족한 요소를 보완하여 영상의 노출과 조회수를
-              극대화합니다.
-            </p>
-          </ul>
-          <p></p>
-          <ul class="project">
-            <p class="list_title">Works</p>
-            <li>
-              동영상 업로드의 긴 대기 시간을 개선하기 위해 Redux-saga를 사용한
-              비동기 업로드를 구현하여, 사용자가 해당 단계에서 기다리지 않도록
-              사용자 경험을 개선
-            </li>
-            <li>컨설팅 서비스를 위한 다수의 Form/Input 컴포넌트 공통화</li>
-            <li>
-              튜토리얼 화면을 React-portal을 사용하여 구현하여, 튜토리얼에 대한
-              사용자 경험 향상
-            </li>
-            <li>프로덕트 웹 프론트 다수 파트 개발</li>
-          </ul>
-          <ul class="project">
-            <p class="list_title">Skills</p>
-            <li>
-              React, Typescript, Chrome Extension, Redux, styled-component
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
+    <!-- 사이드 프로젝트 (6년차 기준으로 제외)
     <div>
       <h4 class="team_title" id="side_project">사이드 프로젝트</h4>
       <div class="content flex">
         <div class="project_title">
           <h5 class="underline">
-            <a href="https://github.com/AyoungWon/pic-pik" class="underline"
-              >Pic-pik</a
-            >
+            <a href="https://github.com/AyoungWon/pic-pik" class="underline">Pic-pik</a>
           </h5>
           <p class="period">2024.10 ~ 현재</p>
         </div>
@@ -438,18 +313,9 @@ permalink: /resume/
           </ul>
           <ul class="project">
             <p class="list_title">Works</p>
-            <li>
-              pic-pik/core와 pic-pik/react 모듈 분리로 JavaScript와 React 환경
-              모두에서 사용 가능
-            </li>
-            <li>이미지 업로드 전 미리보기 제공 및 최적화 처리로 성능 개선</li>
-            <li>
-              이미지 처리 및 커스터마이징 옵션을 다양하게 제공하여 확장성 강화
-            </li>
-            <li>
-              TypeScript 타이핑과 문서화를 통해 코드 이해도와 사용 편의성 향상
-            </li>
-            <li>코드 커버리지 70% 이상 달성하여 안정성과 신뢰성 확보</li>
+            <li>pic-pik/core와 pic-pik/react 모듈 분리로 JavaScript와 React 환경 모두에서 사용 가능</li>
+            <li>업로드 전 미리보기와 이미지 최적화 처리, 커스터마이징 옵션 제공</li>
+            <li>TypeScript 타이핑·문서화, 코드 커버리지 70% 이상 달성</li>
           </ul>
           <ul class="project">
             <p class="list_title">Skills</p>
@@ -458,15 +324,16 @@ permalink: /resume/
         </div>
       </div>
     </div>
+    -->
   </div>
   <div class="contents" style="border: none">
     <h3>Experiences & Education</h3>
     <a href="/mentoring-guide" class="underline">기부 멘토링 : 멘토 활동</a>
     <br /><span class="period">2025.01 ~ 현재</span><br />
     <div>
-      방송통신대학교 컴퓨터과학과 <br /><span class="period"
+      <!-- 방송통신대학교 컴퓨터과학과 <br /><span class="period"
         >2022.03 ~ 현재</span
-      ><br />
+      ><br /> -->
 
       한성대학교 경영학부 졸업 <br /><span class="period"
         >2013.03 ~ 2022.02</span
